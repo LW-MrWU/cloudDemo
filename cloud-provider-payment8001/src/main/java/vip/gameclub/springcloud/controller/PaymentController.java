@@ -36,6 +36,7 @@ public class PaymentController {
     @GetMapping(value = "/payment/get/{id}")
     public CommonResult getPaymentById(@PathVariable("id") Long id){
         Payment payment = paymentService.getPaymentById(id);
+        log.info("查找结果1,id:{}",id);
         if(payment != null){
             return new CommonResult(200,"查询成功", payment);
         }
