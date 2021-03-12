@@ -1,4 +1,4 @@
-package vip.gameclub.springcloud;
+package vip.gameclub.springcloud.config;
 
 import org.springframework.cloud.client.loadbalancer.LoadBalanced;
 import org.springframework.context.annotation.Bean;
